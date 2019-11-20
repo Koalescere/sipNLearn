@@ -1,0 +1,98 @@
+<br />
+<br />
+
+<div class="container">
+
+  <br>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron" id="signup-jumbotron">
+    <h1 class="text-center" id="signup-title">Sign-Up Today!</h1>
+  </div>
+
+  <div class="row">
+
+    <!-- Sign-Up Card-->
+    <div class="col-lg-12">
+      <div class="card card-default">
+        <div class="card-header">
+          New Member Sign-Up
+        </div>
+        <div class="card-body">
+
+          <!-- Sign-up Form (note the various input "types")-->
+          <form role="form" action="/signups" method="POST">
+
+            <div class="form-group row">
+              <label for="name-input"><strong>Parent's First Name:</strong></label>
+              <input name="firstName" class="form-control" id="first-name" type="text"
+                placeholder="First Name (required field)" required="">
+            </div>
+
+            <div class="form-group row">
+              <label for="name-input"><strong>Parent's Last Name:</strong></label>
+              <input name="lastName" class="form-control" id="last-name" type="text"
+                placeholder="Last Name (required field)" required="">
+            </div>
+
+
+            <div class="form-group row">
+              <label for="email"><strong>Parent's Email:</strong></label>
+              <input name="email" class="form-control" id="email" type="email"
+                placeholder="j.smith@gmail.com (required field)" required="">
+            </div>
+
+            <br>
+            <br>
+            <div class="form-group row">
+              <label for="readinglevel"><strong>Child's Reading Level</strong> (required field)</label>
+              <select name="readingLevel" class="form-control" id="reading-level" required="">
+                <option value=""></option>
+                <option value='SW'>SW - Site words (4 to 6 years old)</option>
+                <option value='CB'>CB - Chapter Books (7 to 9 years old)</option>
+                <option value='AR' disabled>AR - Advanced Reader (coming soon)</option>
+              </select>
+            </div>
+            <br>
+            <br>
+            <div class="form-group row">
+              <label for="book-title"><strong>Book Title</strong></label>
+              <input name="bookTitle" class="form-control" id="book-title" type="text" placeholder="(required field)"
+                required="">
+            </div>
+
+            <div class="form-group row">
+              <label for="book-author"><strong>Book Author</strong></label>
+              <input name="bookAuthor" class="form-control" id="book-author" type="text" placeholder="(required field)"
+                required="">
+            </div>
+
+            <div class="form-group row">
+              <label for="genre"><strong>Book Genre</strong> (required field)</label>
+              <select name="genre" class="form-control" id="genre" required="">
+                <option value=""></option>
+                <option>Realistic Fiction</option>
+                <option>Historical Fiction</option>
+                <option>Non-Fiction</option>
+                <option>Traditional Literature</option>
+              </select>
+            </div>
+
+            <div class="form-group row">
+              <label for="reading-status"><strong>Book Reading Status</strong> (required field)</label>
+              <select name="readingStatus" class="form-control" id="reading-status" required="">
+                <option value=""></option>
+                <option value="1"> 1- just_started</option>
+                <option value="2"> 2- mid-way</option>
+                <option value="3"> 3- soon_to_complete</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" id="submit-userbookinfo" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

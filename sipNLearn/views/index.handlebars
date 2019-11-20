@@ -1,0 +1,244 @@
+
+<br />
+<br />
+
+<!-- container for Body -->
+<div class="container bodyContainer">
+        <div class="welcome">
+                <h1>Welcome!</h1>
+                </div>
+                
+<!-- Container for intro -->
+<div class="container intro">
+<div class="row col-lg-12">
+    <div class="introText">
+        <p class="introtext2">Parents need breaks too! 
+    <a href="#meetAPIs">Continue</h5></a>
+    to begin that deservered break.</p>
+    </div>
+    <div class="container buttonContainer">
+       
+        <div class="col-md-">
+            <a href="/signups" class="btn btn-warning signUpButton">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br />
+<br />
+
+<!-- container for API usage of Meet ups -->
+<div id="meetAPIs"></div>
+<section id="blogs" class="container">
+
+    {{#each blogs}}
+    
+       <!-- Meet up API Examples -->
+<div class="blog">
+  <div class="row">
+     <div class="col-md-6">
+        <h2>Title:</h2>
+        </div>
+    <div class="col-md-6">
+        <p>{{bookTitle}}</p>
+        </div>
+ </div>
+  <div class="row">
+     <div class="col-md-6">
+         <h3>Author:</h3>
+        </div>
+
+     <div class="col-md-6">
+         <p>{{bookAuthor}}</p>
+         </div>
+     </div>
+
+
+
+  <div class="row">
+     <div class="col-md-6">
+      <h3>Genre:</h3> 
+        </div>
+
+     <div class="col-md-6">
+            <p>{{genre}}</p> 
+        </div>
+        </div>
+
+
+  <div class="row">
+     <div class="col-md-6">
+    <h3>Reading Level:</h3> 
+        </div>
+    
+     <div class="col-md-6">
+        <p>{{readingLevel}}</p>
+        </div>
+        </div>
+
+
+
+  <div class="row">
+         <div class="col-md-12">
+<div class="innerBlog">
+     <h2>{{firstName}} {{lastName}}</h2>
+        </div>
+        </div>
+        </div>
+
+
+
+  <div class="row">
+     <div class="col-md-12">
+    <p>{{blogging}}</p>
+    
+</div>
+</div>
+
+    {{else}}
+    <p>Blogging has paused</p>
+    {{/each}}
+</section>
+
+
+<br>
+<br>
+<div id="join"></div>
+
+<br />
+<br />
+<br>
+<!-- container for setting up Meet ups and blogs -->
+<div class="container">
+        <h1 class="choices">What would you like to do?</h1>
+<div class="row">
+    
+<!-- Meet up Join -->
+<div class="container col-md-6 aboutUs">
+<div class="card">
+<img class='imgSize' src="https://drinksfeed.com/wp-content/blogs.dir/1/files/2019/05/Book_Club_Wines_Getty_1920x1280.jpg" class="card-img-top" alt="MeetUps">
+<div class="card-body">
+<h5 class="card-title">Meet Up</h5>
+<p class="card-text">Want to set a Meet Up? Simply join and enjoy!</p>
+<a href="/meetups" class="btn btn-primary">Get Started </a>
+</div>
+</div>
+</div>
+<!-- Blog Join -->
+<div class="container col-md-6 aboutUs">
+<div class="card">
+<img class='imgSize' src="https://www.telemediaonline.co.uk/wp-content/uploads/2019/03/Blogging-shutterstock_225278260.jpg" class="card-img-top" alt="Blogs">
+<div class="card-body">
+<h5 class="card-title">Blog</h5>
+<p class="card-text">Want to Blog? Simply join and enjoy!</p>
+<a href="/blogs" class="btn btn-primary">Get Started</a>
+</div>
+</div>
+</div>
+
+<!-- End of Row  -->
+</div>
+<!-- End of Container for Join -->
+</div>
+
+<br>
+<!-- container for API usage of blogs of ages 4-6 -->
+
+<div class="container">
+
+<div class="meetUps">
+
+<p>
+INSERT INTO chapterbooks (firstName, lastName, email, readingLevel, bookTitle, bookAuthor, genre, readingStatus)
+(Site-Word Button)
+<a href="/meetups" class="btn btn-primary">Meetup</a>
+<a href="/blogs" class="btn btn-primary">Blog</a>
+</p>
+</div>
+
+</div>
+
+<br />
+<!-- container for API usage of blogs of ages 7-9 -->
+
+<div class="container">
+<div class="meetUps">
+{{#each meetups}}
+
+<p>
+{{firstName}} {{lastName}} email, readingLevel, bookTitle, bookAuthor, genre, readingStatus)
+(Chapter-Book Button)
+<a href="/meetups" class="btn btn-primary">Meetup</a>
+<a href="/blogs" class="btn btn-primary">Blog</a>
+</p>
+</div>
+{{else}}
+    <p>Meet ups have paused</p>
+    {{/each}}
+</div>
+
+<br />
+<!-- container for API usage of blogs of ages 10-12 -->
+
+<div class="container">
+<div class="meetUps">
+
+<p>
+INSERT INTO chapterbooks (firstName, lastName, email, readingLevel, bookTitle, bookAuthor, genre, readingStatus)
+(Advance-Readers Button)
+<a href="/meetups" class="btn btn-primary">Meetup</a>
+<a href="/blogs" class="btn btn-primary">Blog</a>
+</p>
+</div>
+</div>
+<!-- End of API usage for Blogs -->
+
+<!-- End of container for All -->
+</div>
+<br>
+<br>
+<!-- Footer -->
+<footer class="bg-black small text-center">
+<div class="container">
+<div class="row">
+<p>Designed By:</p>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a target="_blank" href="https://github.com/Sinuhem23/">
+Sinuhe Montero
+</a>
+</div>
+<div class="col-md-3">
+<a target="_blank" href="https://github.com/Koalescere?tab=repositories">
+Gavin Martin
+</a>
+</div>
+<div class="col-md-3">
+<a target="_blank" href="https://github.com/ybuchi">
+Yannik Buchi
+</a>
+</div>
+<div class="col-md-3">
+<a target="_blank" href="https://github.com/Sinuhem23/">
+Veger Pena
+</a>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+

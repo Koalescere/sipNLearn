@@ -1,0 +1,255 @@
+/* /////////////////////////////////////////// */
+/* Affect ALL */
+/* /////////////////////////////////////////// */
+.list-group-item {
+  line-height: 2.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+a {
+  text-decoration: none; 
+}
+
+.list-group-item {
+  line-height: 2.5;
+}
+footer {
+  margin-top: 6%;
+}
+/* //////////////////////////////////////////// */
+/* End of Affect ALL */
+/* //////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////// */
+/* Nav bar  */
+/* /////////////////////////////////////////// */
+.font-control {
+  font-weight: bold;
+}
+
+#logo-control {
+  font-size: 24px;
+}
+
+#nav-color {
+  background-color: #e3f2fd;
+}
+
+.nav-control {
+  margin-left: 60%;
+}
+
+#main-logo-control {
+  margin-left: 5%;
+}
+/* /////////////////////////////////////////// */
+/* end of nav bar */
+/* ///////////////////////////////////// */
+
+
+/* /////////////////////////////////////////// */
+/* Buttons */
+/* /////////////////////////////////////////// */
+.button-color {
+  background-color: rgb(26, 159, 248);
+  border: none;
+  margin: 5px;
+}
+
+.button-color:hover {
+  background-color: rgb(206, 135, 105);
+}
+
+  
+  .signUpButton {
+    margin-top: 10%;
+    width: 200px;
+   
+  }
+  .buttonContainer {
+    text-align: center;
+  }
+  .meetBlogBtns {
+    width: 100px;
+  }
+/* /////////////////////////////////////////// */
+  /* End of Buttons */
+/* /////////////////////////////////////////// */
+   
+
+/* /////////////////////////////////////////// */
+/* Intro */
+/* /////////////////////////////////////////// */
+.intro{
+  background-image: url("https://www.moneycrashers.com/wp-content/uploads/2018/05/children-reading-colorful-denim-outdoors-1068x713.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 5%;
+  height:400px;
+  max-height: 400px;
+  
+}
+.welcome {
+  width: 100%;
+  margin-top:8%;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.introText {
+  background-color: whitesmoke;
+  opacity: .85;
+  font-size: 23px;
+  width: 100%;
+  margin-top: 9%;
+  margin-left: 5%;
+  padding: 10px;
+}
+.introtext2 {
+  text-align: center;
+
+}
+/* /////////////////////////////////////////// */
+/* End of Intro */
+/* /////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////// */
+/* Meet up API Examples */
+/* /////////////////////////////////////////// */
+.meetUps {
+  background-color: whitesmoke;
+  opacity: .8;
+  font-size: 23px;
+  width: 100%;
+  margin-top: 10%;
+  padding: 10px;
+}
+#map {
+  height: 600px;
+  width: 100%;
+  margin-top: 3%;
+}
+.eventimg {
+  background-image: url("https://www.billboard.com/files/styles/article_main_image/public/media/pitchfork-fest-2014-billboard-1548.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+ 
+ 
+
+}
+.sizingmeets {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid whitesmoke;
+
+}
+
+.showBox {
+border: solid whitesmoke;
+margin-left: 5%;
+margin-top: 15px;
+
+}
+.showBox:hover{
+  background-color: whitesmoke;
+  border:2px solid skyblue;
+  cursor: pointer;
+}
+.namePad {
+  padding: 10px;
+}
+
+
+
+/* /////////////////////////////////////////// */
+/* Blog API Examples */
+/* /////////////////////////////////////////// */
+.blog {
+  background-color: whitesmoke;
+  /* opacity: .8; */
+  font-size: 23px;
+  width: 100%;
+  margin-top: 10%;
+  padding: 10px;
+
+}
+.innerBlog {
+ 
+  font-size: 23px;
+  width: 100%;
+  padding: 15px;
+}
+.innermeetUp {
+  background-color: whitesmoke;
+  opacity: .9;
+  font-size: 23px;
+  width: 100%;
+  padding: 15px;
+}
+/* /////////////////////////////////////////// */
+/* End of meet up API */
+/* /////////////////////////////////////////// */
+
+
+
+
+/* /////////////////////////////////////////// */
+/* Join section */
+/* /////////////////////////////////////////// */
+.aboutUs {
+ 
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 540px;
+}
+.imgSize {
+  width: 100%;
+  max-width: 540px;
+  height: 400px;
+ 
+}
+.choices {
+  padding-bottom: 20px;
+}
+/* /////////////////////////////////////////// */
+/* End Join section*/
+/* /////////////////////////////////////////// */
+
+/* SIGNUP FORM */
+#signup-jumbotron{
+  background-image: url(../img/SignUpPic.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+#signup-title{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* /////////////////////////////////////////// */
+/* Footer */
+/* /////////////////////////////////////////// */
+footer {
+  padding: 10px;
+  text-align: center;
+}
+/* /////////////////////////////////////////// */
+/* End of Footer */
+/* /////////////////////////////////////////// */
+

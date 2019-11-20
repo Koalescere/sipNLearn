@@ -1,0 +1,158 @@
+<h1>Destination: Sip_N_Learn</h1>
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        //Map Options
+        var options = {
+            zoom: 12,
+            center: { lat: 40.7831, lng: -73.9712 }
+        }
+        // New map
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+
+        var markers = [
+            {
+                coords: { lat: 40.764240, lng: -73.979736 },
+                content: '<h1>carnegie book club bar</h1>'
+            },
+
+            {
+                coords: { lat: 40.771070, lng: -73.962067 },
+                content: '<h1>lexington bar and books</h1>'
+            },
+            {
+                coords: { lat: 40.738620, lng: -74.005350 },
+                content: '<h1>hudson bar and books</h1>'
+            },
+            {
+                coords: { lat: 40.752120, lng: -73.979420 },
+                content: '<h1>library hotel</h1>'
+            },
+            {
+                coords: { lat: 40.744949, lng: -73.988464 },
+                content: '<h1>the library at the nomad</h1>'
+            }
+        ];
+
+        for (var i = 0; i < markers.length; i++) {
+            addMarker(markers[i]);
+        }
+
+        // Add Marker function
+        function addMarker(props) {
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+
+            });
+
+            if (props.content) {
+                var infowindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+            }
+        }
+
+    }    
+</script>
+
+
+<script async defer
+    src="https://maps.google.com"
+    type="text/javascript"></script>
+
+<script>
+    document.addListener('click', function () {
+        runGoogleMap();
+        window.open(url, '_blank');
+    });
+</script>
+
+<br>
+<br>
+
+{{!-- MEETUP POPULATION ON PAGE --}}
+
+<section id="meetUps" class="container">
+    <h1>Event Details</h1>
+    <br>
+    {{#each meetups}}
+
+    <!-- Meet up API Examples -->
+
+    <div class="container ">
+        <div class="row showBox">
+            <div class="col col-6">
+                <h2 class="row namePad">{{firstName}} {{lastName}}</h2>
+
+
+                <p>This event is for "{{genre}}" at the reading level of "{{readingLevel}}" with the status of
+                    "{{readingStatus}}"</p>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="/meetups" class="btn btn-warning meetBlogBtns">Meetup</a>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Joing this Session!</p>
+                        </div>
+                    </div>
+                    <div class="row joinandBlog">
+                        <div class="col-md-4">
+                            <a href="/blogs" class="btn btn-warning meetBlogBtns">Blog</a>
+                        </div>
+                        <div class="col-md-8 ">
+                            <p>Free!</p>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-6 eventimg">
+                </div>
+
+        </div>
+    </div>
+    
+
+
+    {{else}}
+    <p>Meet Up has paused</p>
+    {{/each}}
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center">
+    <div class="container">
+        <div class="row">
+            <p>Designed By:</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="https://github.com/Sinuhem23/">
+                    Sinuhe Montero
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a target="_blank" href="https://github.com/Koalescere?tab=repositories">
+                    Gavin Martin
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a target="_blank" href="https://github.com/ybuchi">
+                    Yannik Buchi
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a target="_blank" href="https://github.com/Sinuhem23/">
+                    Veger Pena
+                </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
